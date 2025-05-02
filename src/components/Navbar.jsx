@@ -29,7 +29,7 @@ const Navbar = () => {
             <div onClick={handleNav} className="menu-icon md:hidden px-4">
                 {nav ? <AiOutlineClose className="cursor-pointer" size={24}/> : <MdMenu className="cursor-pointer" size={24} />}
             </div>
-            <div onClick={handleNav} className={`z-50 md:hidden absolute top-20 left-0 w-full shadow-lg transform transition-all duration-300 ease-in-out ${nav ? "translate-y-0 opacity-100" : "-translate-y-5 opacity-0 pointer-events-none"}`}>
+            <div onClick={handleNav} className={`z-50 md:hidden absolute top-20 left-0 w-full transform transition-all duration-300 ease-in-out ${nav ? "translate-y-0 opacity-100" : "-translate-y-5 opacity-0 pointer-events-none"}`}>
                 {/* <ul className="nav-links md:hidden flex flex-col space-y-2 absolute left-0 bg-white w-full p-4 shadow-lg">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -37,12 +37,12 @@ const Navbar = () => {
                     <li><a href="#contact">Contact</a></li>
                 </ul> */}
 
-                <ul className="flex flex-col divide-y divide-gray-200">
+                <ul className="flex flex-col">
                     {["Home", "About", "Services", "Contact"].map((item, index) => (
                         <li key={index}>
                             <a
                                 href={`#${item.toLowerCase()}`}
-                                className="block px-6 py-4 text-white font-medium hover:text-blue-600 transition-colors duration-200"
+                                className="block px-4 py-4 text-white font-medium hover:text-blue-600 transition-colors duration-200"
                             >
                                 {item}
                             </a>
