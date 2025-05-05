@@ -3,7 +3,8 @@ import Hero from './components/Hero.jsx'
 import Destination from './components/Destination.jsx'
 import Search from './components/Search.jsx'
 import Selects from './components/Selects.jsx'
-
+import Carousel from './components/Carousel.jsx'
+import Footer from './components/Footer.jsx'
 function App() {
 
   return (
@@ -13,6 +14,8 @@ function App() {
       <Destination />
       <Search />
       <Selects />
+      <Carousel />
+      <Footer />
     </>
   )
 }
