@@ -1,19 +1,19 @@
 import React from "react";
-import borabora from "../assets/borabora.jpg";
-import borabora2 from "../assets/borabora2.jpg";
-import keywest from "../assets/keywest.jpg";
-import maldives from "../assets/maldives.jpg";
-import maldives2 from "../assets/maldives2.jpg";
+import beach1 from "../assets/beach1.jpg";
+import beach2 from "../assets/beach2.jpg";
+import beach3 from "../assets/beach3.jpg";
+import beach4 from "../assets/beach4.jpg";
+import beach5 from "../assets/beach5.jpg";
 import SelectsCard from "./SelectsCard";
 
 const Selects = () => {
     return(
         <div className="max-w-[1240px] mx-auto px-4 py-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <SelectsCard img={borabora} text="Borabora"/>
-            <SelectsCard img={borabora2} text="Borabora 2"/>
-            <SelectsCard img={keywest} text="Keywest"/>
-            <SelectsCard img={maldives} text="Maldives"/>
-            <SelectsCard img={maldives2} text="Maldives 2"/>
+            <SelectsCard img={beach1} text="Beach 1"/>
+            <SelectsCard img={beach2} text="Beach 2"/>
+            <SelectsCard img={beach3} text="Beach 3"/>
+            <SelectsCard img={beach4} text="Beach 4"/>
+            <SelectsCard img={beach5} text="Beach 5"/>
         </div>
     )
 }

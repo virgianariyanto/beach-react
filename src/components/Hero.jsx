@@ -1,5 +1,5 @@
 import React from "react";
-import beachVideo from "../assets/beachVid.mp4";
+import beachVideo from "../assets/3703474-hd_1920_1080_30fps.mp4";
 
 const Hero = () => {
     return (

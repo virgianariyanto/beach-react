@@ -12,7 +12,7 @@ const Search = () => {
                         Sandals Resorts are the ultimate in luxury all-inclusive vacations for couples. With 15 stunning beachfront resorts located on the most beautiful islands in the Caribbean, Sandals offers a unique experience that combines luxury, romance, and adventure.
                     </p>
                 </div>
-                <div className="grid sm:grid-cols-2 gap-8 py-4">
+                <div className="grid sm:grid-cols-3 gap-8 py-4">
                     <div className="flex flex-col lg:flex-row justify-between items-center text-center p-4">
                         <div className="flex items-center space-x-4">
                             <RiCustomerService2Fill size={40} className="text-blue-600" />
@@ -28,6 +28,15 @@ const Search = () => {
                             <div>
                                 <h3 className="font-bold">TRAVEL EXPERTS</h3>
                                 <p className="text-gray-600">Expert advice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-col lg:flex-row justify-between items-center text-center p-4">
+                        <div className="flex items-center space-x-4">
+                            <RiCustomerService2Fill size={40} className="text-blue-600" />
+                            <div>
+                                <h3 className="font-bold">CUSTOMER SERVICE</h3>
+                                <p className="text-gray-600">24/7 support</p>
                             </div>
                         </div>
                     </div>

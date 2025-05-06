@@ -1,6 +1,6 @@
 import React from "react";
-import { BsPerson } from "react-icons/bs";
-import { BiSearch } from "react-icons/bi";
+import { MdPerson } from "react-icons/md";
+import { FaSearch } from "react-icons/fa";
 import { MdMenu } from "react-icons/md";
 import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
@@ -14,17 +14,17 @@ const Navbar = () => {
     return (
         <nav className="navbar flex justify-between items-center h-20 text-white absolute z-10 w-full">
             <div>
-                <h1 className="font-bold px-4">BEACHES.</h1>
+                <h1 className="font-bold md:px-16 px-4 text-2xl">LITTORAL.</h1>
             </div>
             <ul className="nav-links hidden md:flex space-x-4">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a className="font-bold" href="#home">Home</a></li>
+                <li><a className="font-bold" href="#about">About</a></li>
+                <li><a className="font-bold" href="#services">Services</a></li>
+                <li><a className="font-bold" href="#contact">Contact</a></li>
             </ul>
-            <div className="icons px-4 space-x-3 hidden md:flex">
-                <BsPerson />
-                <BiSearch />
+            <div className="icons px-16 space-x-3 hidden md:flex">
+                <MdPerson className="cursor-pointer" size={20}/>
+                <FaSearch className="cursor-pointer" size={16}/>
             </div>
             <div onClick={handleNav} className="menu-icon md:hidden px-4">
                 {nav ? <AiOutlineClose className="cursor-pointer" size={24}/> : <MdMenu className="cursor-pointer" size={24} />}
